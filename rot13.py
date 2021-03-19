@@ -1,9 +1,3 @@
-
-def split(string):
-    print(string)
-    return [char for char in string] 
-
-
 def rot_13(message_in):
     # split_message = split(message_in)
     message_out = []
@@ -26,10 +20,7 @@ def rot_13(message_in):
             message_out.append(chr(nv))
         else:
             print('Somthing went wrong.')
-
-    print(message_out)
-
-    return('test')
+    return(''.join(message_out))
 
 
 def main():
